@@ -3,6 +3,7 @@
   "name": "wizardry",
   "description": "A task-based graphicsmagick library for Node.js",
   "version": "0.0.1",
+  "private": true,
   "homepage": "https://github.com/diy/wizardry",
   "repository": {
     "type": "git",
