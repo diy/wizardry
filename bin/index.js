@@ -2,7 +2,7 @@
 var optimist = require('optimist'),
     wizardry = require('./../lib/wizardry');
 
-var callback = function(err) {
+var stdout = function(err) {
     if (err) { console.dir(err); };
 }
 
@@ -14,5 +14,5 @@ var argv = optimist.usage('Usage: $0 [images] [task]')
     .describe('t', 'Task file used to process images.')
     .argv;
 
-wizardry([__dirname + '/' + argv.i], require('./' + argv.t), callback);
+wizardry([__dirname + '/' + argv.i], require('./' + __dirname + '/' + argv.t), stdout);
 
