@@ -1,12 +1,12 @@
 {
   "author": "Zachary Bruggeman <zbruggeman@me.com>",
   "name": "wizardry",
-  "description": "A task based library for graphics-magick",
+  "description": "A task-based graphicsmagick library for Node.js",
   "version": "0.0.1",
-  "homepage": "https://github.com/remixz/wizardry",
+  "homepage": "https://github.com/diy/wizardry",
   "repository": {
     "type": "git",
-    "url": "https://github.com/remixz/wizardry.git"
+    "url": "https://github.com/diy/wizardry.git"
   },
   "bin": {
     "wizardry": "./bin/index.js"
