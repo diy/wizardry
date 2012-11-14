@@ -10,7 +10,7 @@
   },
   "bin": {
     "wizardry": "./bin/index.js"
-  }
+  },
   "main": "./lib/wizardry.js",
   "dependencies": {
     "lodash": "~0.8.1",
