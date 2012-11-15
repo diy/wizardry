@@ -14,7 +14,7 @@
   },
   "main": "./lib/wizardry.js",
   "scripts": {
-    "test": "tap ./test/*.js"
+    "test": "tap test/*.js"
   },
   "dependencies": {
     "lodash": "~0.8.1",

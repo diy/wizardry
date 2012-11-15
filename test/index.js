@@ -25,7 +25,7 @@ async.auto({
 		var callback = function(err) {
 		    if (err) { return false };
 		};
-		wizardry(['canadaooooo.png'], task, callback);
+		wizardry(['canada.png'], task, callback);
 	},
 
 	test: ['process', function(callback, obj) {
