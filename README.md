@@ -1,6 +1,6 @@
 ## wizardry
 
-Wizardry is a task-based library for GraphicsMagick / ImageMagick that focuses simplicity and getting one thing done right: processing images.
+Wizardry is a task-based library for GraphicsMagick / ImageMagick that focuses on simplicity and getting one thing done right: processing images.
 
 ### Installation
 ```bash
@@ -15,6 +15,8 @@ var task = require('path/to/your/task.json')
 // Easy as one line.
 wizardry(['path/to/image.png'], task, callback);
 ```
+
+Wizardry requires an array of image(s) to process. It expects that they are valid file paths.
 
 ### Command line usage
 ```bash

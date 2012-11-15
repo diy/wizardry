@@ -18,12 +18,15 @@ var async = require('async'),
 /**
  * Suite
  */
-
+var allGood = true;
 async.auto({
 
 	process: function(callback) {
 		var callback = function(err) {
-		    if (err) { return false };
+		    if (err) {
+		    	allGood = false;
+		    	return false;
+		    };
 		};
 		wizardry([image], task, callback);
 	},
@@ -32,6 +35,10 @@ async.auto({
 		test('Component definition', function(t) {
 			t.type(wizardry, 'function', 'Wizardry should be a function.');
 			t.type(task, 'object', 'Task should be an object.');
+			t.end();
+		});
+		test('Callback return', function(t) {
+			t.equals(allGood, true, 'Make sure our callback did not return an error');
 			t.end();
 		});
 
