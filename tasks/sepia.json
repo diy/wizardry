@@ -2,6 +2,5 @@
     "commands": {
         "modulate": "115, 0, 100",
         "colorize": "7, 21, 50"
-    },
-    "library": "fdsd"
+    }
 }
