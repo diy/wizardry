@@ -11,9 +11,9 @@
 
 var async = require('async'),
     test  = require('tap').test,
-    task = require('./sepia.json');
+    task = require('./sepia.json'),
+    image = require('canada.png');
     wizardry = require('./../lib/wizardry');
-
 
 /**
  * Suite
@@ -25,13 +25,18 @@ async.auto({
 		var callback = function(err) {
 		    if (err) { return false };
 		};
-		wizardry(['canada.png'], task, callback);
+		wizardry([image], task, callback);
 	},
 
 	test: ['process', function(callback, obj) {
 		test('Component definition', function(t) {
 			t.type(wizardry, 'function', 'Wizardry should be a function.');
 			t.type(task, 'object', 'Task should be an object.');
+			t.end();
+		});
+
+		test('Process callback', function(t) {
+			t.equal()
 			t.end();
 		});
 
