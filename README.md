@@ -16,6 +16,11 @@ var task = require('path/to/your/task.json')
 wizardry(['path/to/image.png'], task, callback);
 ```
 
+### Command line usage
+```bash
+wizardry -i path/to/image.png -t path/to/your/task.json
+```
+
 ### Task file
 
 A task file in wizardry is a .json file that defines each of the commands to be ran on an image. They are ran in the order listed. It also provides configuration, such as the amount of processes to run, the output directory, and which library to use.

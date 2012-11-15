@@ -35,11 +35,6 @@ async.auto({
 			t.end();
 		});
 
-		test('Process callback', function(t) {
-			t.equal()
-			t.end();
-		});
-
 		callback();
 	}]
 
