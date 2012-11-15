@@ -1,1 +1,39 @@
-Todo.
+## wizardry
+
+Wizardry is a task-based library for GraphicsMagick / ImageMagick that focuses simplicity and getting one thing done right: processing images.
+
+### Installation
+```bash
+npm install wizardry
+```
+
+### Basic Usage
+```javascript
+var wizardry = require('wizardry');
+var task = require('path/to/your/task.json')
+
+// Easy as one line.
+wizardry(['path/to/image.png'], task, callback);
+```
+
+### Task file
+
+A task file in wizardry is a .json file that defines each of the commands to be ran on an image. They are ran in the order listed. It also provides configuration, such as the amount of processes to run, the output directory, and which library to use.
+
+#### Example task file
+```json
+{
+    "commands": {
+        "modulate": "115, 0, 100",
+        "colorize": "7, 21, 50"
+    },
+    "processes": 10,
+    "library": "imagemagick",
+    "outputDirectory": "/foo/bar/folder"
+}
+```
+
+### Testing
+```bash
+npm test
+```
