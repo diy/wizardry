@@ -12,7 +12,6 @@
 var async = require('async'),
     test  = require('tap').test,
     task = require('./sepia.json'),
-    image = require('canada.png');
     wizardry = require('./../lib/wizardry');
 
 /**
@@ -28,7 +27,7 @@ async.auto({
 		    	return false;
 		    };
 		};
-		wizardry([image], task, callback);
+		wizardry(['canada.png'], task, callback);
 	},
 
 	test: ['process', function(callback, obj) {
