@@ -2,7 +2,7 @@
   "author": "Zachary Bruggeman <zbruggeman@me.com>",
   "name": "wizardry",
   "description": "A task-based library for GraphicsMagick / ImageMagick.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/diy/wizardry",
   "repository": {
     "type": "git",
