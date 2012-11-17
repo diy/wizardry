@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/diy/wizardry.git"
   },
+  "bugs": {
+    "url": "https://github.com/diy/wizardry/issues"
+  },
   "bin": {
     "wizardry": "./bin/index.js"
   },
