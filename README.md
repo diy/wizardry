@@ -7,7 +7,7 @@ Wizardry is a task-based library for GraphicsMagick / ImageMagick that focuses o
 
 ### Installation
 
-Before installing the module, you will need either [GraphicsMagick](http://www.graphicsmagick.org/download.html) or [ImageMagick](http://www.imagemagick.org/script/binary-releases.php) installed. If you use homebrew, it can be even simpler, with either just `brew install grapicsmagick` or `brew install imagemagick`. After one of them is installed, run:
+Before installing the module, you will need either [GraphicsMagick](http://www.graphicsmagick.org/download.html) or [ImageMagick](http://www.imagemagick.org/script/binary-releases.php) installed. If you use homebrew, it can be even simpler, with either just `brew install graphicsmagick` or `brew install imagemagick`. After one of them is installed, run:
 
 ```bash
 npm install wizardry
