@@ -1,4 +1,4 @@
-## wizardry ![intercom.js](https://raw.github.com/diy/wizardry/master/wizardry.png)
+## ![wizardry](https://raw.github.com/diy/wizardry/master/wizardry.png)
 
 Wizardry is a task-based library for GraphicsMagick / ImageMagick that focuses on simplicity and getting one thing done right: processing images.
 
