@@ -10,7 +10,7 @@ npm install wizardry
 ### Basic Usage
 ```javascript
 var wizardry = require('wizardry');
-var task = require('path/to/your/task.json')
+var task = require('./path/to/your/task.json')
 
 // Easy as one line.
 wizardry(['path/to/image.png'], task, callback);
