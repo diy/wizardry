@@ -2,7 +2,8 @@
 
 Wizardry is a task-based library for GraphicsMagick / ImageMagick that focuses on simplicity and getting one thing done right: processing images.
 
-![Travis Status](https://secure.travis-ci.org/diy/wizardry.png)
+[![Travis Status](https://secure.travis-ci.org/diy/wizardry.png)](http://travis-ci.org/diy/wizardry)
+
 
 ### Installation
 ```bash
