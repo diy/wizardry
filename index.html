@@ -36,7 +36,7 @@
 
 <h3>Installation</h3>
 
-<p>Before installing the module, you will need either <a href="http://www.graphicsmagick.org/download.html">GraphicsMagick</a> or <a href="http://www.imagemagick.org/script/binary-releases.php">ImageMagick</a> installed. If you use homebrew, it can be even simpler, with either just <code>brew install graphicsmagick</code> or <code>brew install imagemagick</code>. After one of them is installed, run:</p>
+<p>Before installing the module, you will need either <a href="http://www.graphicsmagick.org/download.html">GraphicsMagick</a> or <a href="http://www.imagemagick.org/script/binary-releases.php">ImageMagick</a> installed. If you use homebrew, it can be even simpler, with either just <code>brew install graphicsmagick</code> or <code>brew install imagemagick</code>. GraphicsMagick is recommended, as wizardry uses GraphicsMagick by default. After one of them is installed, run:</p>
 
 <div class="highlight"><pre>npm install wizardry
 </pre></div>
@@ -59,7 +59,7 @@
 
 <h3>Task file</h3>
 
-<p>A task file in wizardry is a .json file that defines each of the commands to be run on an image. They are run in the order listed. It also provides configuration, such as the amount of processes to run, the output directory, and which library to use.</p>
+<p>A task file in wizardry is a JavaScript object (a .json file works great) that defines each of the commands to be run on an image. They are run in the order listed. It also provides configuration, such as the amount of processes to run, the output directory, and which library to use. If a library is not specified, it will default to GraphicsMagick.</p>
 
 <h4>Example task file</h4>
 
