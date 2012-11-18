@@ -7,7 +7,7 @@ Wizardry is a task-based library for GraphicsMagick / ImageMagick that focuses o
 
 ### Installation
 
-Before installing the module, you will need either [GraphicsMagick](http://www.graphicsmagick.org/download.html) or [ImageMagick](http://www.imagemagick.org/script/binary-releases.php) installed. If you use homebrew, it can be even simpler, with either just `brew install graphicsmagick` or `brew install imagemagick`. After one of them is installed, run:
+Before installing the module, you will need either [GraphicsMagick](http://www.graphicsmagick.org/download.html) or [ImageMagick](http://www.imagemagick.org/script/binary-releases.php) installed. If you use homebrew, it can be even simpler, with either just `brew install graphicsmagick` or `brew install imagemagick`. GraphicsMagick is recommended, as wizardry uses GraphicsMagick by default. After one of them is installed, run:
 
 ```bash
 npm install wizardry
@@ -31,7 +31,7 @@ wizardry -i path/to/image.png -t path/to/your/task.json
 
 ### Task file
 
-A task file in wizardry is a JavaScript object (a .json file works great) that defines each of the commands to be run on an image. They are run in the order listed. It also provides configuration, such as the amount of processes to run, the output directory, and which library to use.
+A task file in wizardry is a JavaScript object (a .json file works great) that defines each of the commands to be run on an image. They are run in the order listed. It also provides configuration, such as the amount of processes to run, the output directory, and which library to use. If a library is not specified, it will default to GraphicsMagick.
 
 #### Example task file
 ```json
